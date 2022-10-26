@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/susccrua/expenses-chart/static/css/main.4ac47ca1.css",
+    "main.js": "/susccrua/expenses-chart/static/js/main.70d19cc6.js",
+    "static/js/787.e7e332ad.chunk.js": "/susccrua/expenses-chart/static/js/787.e7e332ad.chunk.js",
+    "index.html": "/susccrua/expenses-chart/index.html",
+    "main.4ac47ca1.css.map": "/susccrua/expenses-chart/static/css/main.4ac47ca1.css.map",
+    "main.70d19cc6.js.map": "/susccrua/expenses-chart/static/js/main.70d19cc6.js.map",
+    "787.e7e332ad.chunk.js.map": "/susccrua/expenses-chart/static/js/787.e7e332ad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ac47ca1.css",
+    "static/js/main.70d19cc6.js"
+  ]
+}
