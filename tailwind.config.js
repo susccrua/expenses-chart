@@ -5,7 +5,7 @@ module.exports = {
     // fontFamily: {
     //   'sans': ["Nunito"],
     // },
-    // extend: {},
+    extend: { display: ["group-hover"], },
   },
   plugins: [],
 }

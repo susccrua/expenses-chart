@@ -2,9 +2,8 @@ import { useEffect, useState } from 'react';
 import Day from './Day.js'
 
 export default function Spending(props) {
-    const days = { 'mon': 55, 'tue': 402, 'wed': 21, 'thu': 10, "fri": 106 }
     const [data, setData] = useState([]);
-    const [avg, setAvg] = useState(0);
+    const [max, setMax] = useState(0);
     const [total, setTotal] = useState(0);
 
 
@@ -27,7 +26,8 @@ export default function Spending(props) {
     }
     useEffect(() => {
         getData()
-        setAvg(data.reduce((prev, curr) => (prev + curr.amount), 0) / data.length);
+        setMax(Math.max(...data.map(d => d.amount)))
+        console.log(Math.max(...data.map(d => d.amount)))
         setTotal(data.reduce((prev, curr) => (prev + curr.amount), 0))
 
     }, [])
@@ -39,7 +39,7 @@ export default function Spending(props) {
                     <div className="p-6">
 
                         <h3 className="text-xl font-semibold">Spending - Last 7 days</h3>
-                        <div className={`flex gap-2 h-60 `}>{data.map(d => { return <Day amount={d.amount} day={d.day} avg={avg} /> })}</div>
+                        <div className={`flex h-52 mt-12`}>{data.map(d => { return <Day amount={d.amount} day={d.day} max={max} /> })}</div>
                     </div>
 
                     <div className="flex border-t p-6 justify-between items-center">
