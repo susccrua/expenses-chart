@@ -1,6 +1,6 @@
 {
   "name": "expenses-chart",
-  "homepage": "http://github.com/susccrua/expenses-chart",
+  "homepage": "http://susccrua.github.io/expenses-chart/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
